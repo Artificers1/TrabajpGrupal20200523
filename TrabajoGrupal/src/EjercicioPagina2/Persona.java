@@ -1,5 +1,6 @@
 package EjercicioPagina2;
 
-public class Persona {
-    
+public abstract class Persona {
+    abstract void registrar();
+abstract double calcularSueldo();
 }
