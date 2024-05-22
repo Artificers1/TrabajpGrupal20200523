@@ -12,5 +12,34 @@ public class Empleado extends Persona {
         this.horasExtras = horasExtras;
         this.pagoPorHoraExtra = pagoPorHoraExtra;
     }
-    
+   
+    @Override
+    void registrar() {
+        System.out.println("Registro del empleado: " + nombre);
+      
+    }
+
+   
+    @Override
+    double calcularSueldo() {
+        double sueldoTotal = salarioBase + (horasExtras * pagoPorHoraExtra);
+        return sueldoTotal;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public double getSalarioBase() {
+        return salarioBase;
+    }
+
+    public int getHorasExtras() {
+        return horasExtras;
+    }
+
+    public double getPagoPorHoraExtra() {
+        return pagoPorHoraExtra;
+    }
 }
+
